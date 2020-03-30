@@ -1,0 +1,19 @@
+* {
+   font-size: 16px;
+}
+
+.body {
+   padding: 1rem 1rem;
+}
+
+img {
+   width: 100%;
+   height: auto;
+   max-width: 300px;
+}
+
+@media all and (max-width: 850px) {
+   img {
+      max-width: 150px;
+   }
+}

@@ -1,0 +1,13 @@
+<header>
+   <!-- <h1 class="logo">Covid-19</h1> -->
+   <nav>
+      <ul class="nav_links">
+         <li class="logo"><h1><a href="#">Covid-19</a></h1></li>
+         <li class="items" [ngClass]="open ? '': 'show'"><a href="#">News</a></li>
+         <li class="items" [ngClass]="open ? '': 'show'"><a href="#">Country Index</a></li>
+         <li class="items" [ngClass]="open ? '': 'show'"><a href="#">About</a></li>
+         
+         <li class="btn"><a (click)="showMenu()"> <i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+</header>
