@@ -71,7 +71,7 @@ nav ul li.btn {
    display: none;
 }
 
-nav ul li.btn:hover i:before {
+nav ul li.btn.hide i:before {
    content: '\f00d';
 }
 

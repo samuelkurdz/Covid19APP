@@ -7,7 +7,11 @@
          <li class="items" [ngClass]="open ? '': 'show'"><a href="#">Country Index</a></li>
          <li class="items" [ngClass]="open ? '': 'show'"><a href="#">About</a></li>
          
-         <li class="btn"><a (click)="showMenu()"> <i class="fas fa-bars"></i></a></li>
+         <li class="btn" [ngClass]="open? '': 'hide'">
+            <a (click)="showMenu()">
+               <i class="fas fa-bars"></i>
+            </a>
+         </li>
       </ul>
    </nav>
 </header>
