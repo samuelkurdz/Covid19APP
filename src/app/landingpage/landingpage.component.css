@@ -4,11 +4,13 @@
 
 .body {
    padding: 1rem 1rem;
+   text-align: center;
 }
 
 .info {
 text-align: center;
 margin-top: 1rem;
+margin-bottom: 4.5rem;
 color: #000;
 background-color: #fff;
 box-shadow: 0px 2px 8px 15px rgba(0, 0, 0, 0.1);
@@ -22,7 +24,7 @@ img {
 
 .intro h1 {
    font-size: x-large;
-   margin: 1rem auto;
+   margin: 0rem auto 1rem auto;
 }
 .intro p {
    text-align: justify;
@@ -49,9 +51,16 @@ img {
 
 
 /* World Cases Section */
+.review-header {
+text-align: center;
+margin-top: 2rem;
+text-transform: uppercase;
+font-size: 18px;
+color: #000
+}
 
 .world-review {
-   margin-top: 2rem;
+   margin-top: 1rem;
    padding: 1rem;
    color: white;
    text-align: center;
@@ -87,7 +96,6 @@ img {
    background-color: green;
 }
 
-
 @media all and (min-width: 800px) {
 
    .world-review {
@@ -100,5 +108,39 @@ img {
    .world {
       width: 80%;
       padding: 1rem 1.5rem;
+   }
+}
+
+
+
+.health {
+   text-align: left;
+   margin-top: 1rem;
+   margin-bottom: 4.5rem;
+}
+
+.heth {
+   color: #000;
+   background-color: #fff;
+   box-shadow: 0px 2px 8px 15px rgba(0, 0, 0, 0.1);
+   border-radius: 6px;
+   margin-bottom: 2rem;
+   padding: 1rem;
+}
+
+ul {
+   padding: 5px;
+   list-style: none;
+   list-style-position: outside;
+}
+
+
+@media all and (min-width: 800px) {
+
+   .health {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      column-gap: 2rem;
    }
 }

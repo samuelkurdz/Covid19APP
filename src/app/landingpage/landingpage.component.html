@@ -15,20 +15,87 @@
       </article>      
    </section>
 
-   <section class="world-review">
+   <!-- display world index -->
+   <h2 class="review-header">Update Round The World</h2>
+   <section class="world-review" *ngFor="let item of worldIndex">
       <div class="world world-case">
-         <h1>200,000</h1>
-         <p>total Cases</p>
+         <h1>{{item.cases}}</h1>
+         <p>Total Cases</p>
       </div>
 
       <div class="world world-death">
-         <h1>150,000</h1>
+         <h1>{{item.deaths}}</h1>
          <p>total Deaths</p>
       </div>
 
       <div class="world world-recovery">
-         <h1>50,000</h1>
-         <p>Recoveries</p>
+         <h1>{{item.recovered}}</h1>
+         <p>Recovered</p>
+      </div>
+   </section>
+
+
+
+   <div class="health">
+      <div class="symptons heth">
+      <h2>Symptons</h2>
+      <ul>
+         <li>Fever</li>
+         <li>Dry Cough</li>
+         <li>Breathing Diffculties</li>
+         <li>Fatigue</li>
+         <li>Aches and Pains</li>
+         <li>Running Nose</li>
+         <li>SOre Throat</li>
+         <li>Diarrhoea</li>
+      </ul>
+      <pre>At critical conditions, it canlead to heart failure</pre>
+      </div>
+
+      <div class="spread">
+
+         <div class="spread-how heth">
+            <h2>How It Spreads</h2>
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, vitae. Dolores reprehenderit neque eum quam molestiae error, repellendus laudantium non incidunt, eaque consequuntur alias provident nam eligendi placeat. Saepe, repellat.
+            </p>
+         </div>
+
+         <div class="spread_prevent heth">
+            <h2>How It Can Be Prevented</h2>
+            <ul>
+               <li>Wash Your Hans</li>
+               <li>Don't touch your face</li>
+               <li>Social Distancing</li>
+               <li>Sneeze into Rolls and Dispose</li>
+               <li></li>
+            </ul>
+         </div>
+
+      </div>
+
+   </div>
+
+
+
+
+   <!-- display Nigeria Index -->
+   <h2 class="review-header">Nigeria's Update (NCDC)</h2>
+   <section class="world-review" *ngFor="let item of nigeriaIndex">
+
+      <div class="world world-case">
+         <h1>{{item.cases}}</h1>
+         <p>Total Cases</p>
+      </div>
+
+      <div class="world world-death">
+         <h1>{{item.deaths}}</h1>
+         <p>total Deaths</p>
+      </div>
+
+      <div class="world world-recovery">
+         <h1>{{item.recovered}}</h1>
+         <p>Recovered</p>
       </div>
    </section>
 
