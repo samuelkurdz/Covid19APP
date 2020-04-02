@@ -1,11 +1,21 @@
 <header>
-   <!-- <h1 class="logo">Covid-19</h1> -->
+
    <nav>
       <ul class="nav_links">
-         <li class="logo"><h1><a href="#">Covid-19</a></h1></li>
-         <li class="items" [ngClass]="open ? '': 'show'"><a href="#">News</a></li>
-         <li class="items" [ngClass]="open ? '': 'show'"><a href="#">Country Index</a></li>
-         <li class="items" [ngClass]="open ? '': 'show'"><a href="#">About</a></li>
+         <li class="logo">
+            <h1>
+               <a routerLink="/">Covid-19</a>
+            </h1>
+         </li>
+         <li class="items" [ngClass]="open ? '': 'show'">
+            <a routerLink="/news">News</a>
+         </li>
+         <li class="items" [ngClass]="open ? '': 'show'">
+            <a routerLink="/countryindex">Country Index</a>
+         </li>
+         <li class="items" [ngClass]="open ? '': 'show'">
+            <a routerLink="/about">About</a>
+         </li>
          
          <li class="btn" [ngClass]="open? '': 'hide'">
             <a (click)="showMenu()">
