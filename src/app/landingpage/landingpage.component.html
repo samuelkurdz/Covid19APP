@@ -31,17 +31,17 @@
    <h2 class="review-header">Update Round The World</h2>
    <section class="world-review" *ngFor="let item of worldIndex">
       <div class="world world-case">
-         <h1>{{item.cases}}</h1>
+         <h1>{{item.cases | number}}</h1>
          <p>Total Cases</p>
       </div>
 
       <div class="world world-death">
-         <h1>{{item.deaths}}</h1>
+         <h1>{{item.deaths | number}}</h1>
          <p>total Deaths</p>
       </div>
 
       <div class="world world-recovery">
-         <h1>{{item.recovered}}</h1>
+         <h1>{{item.recovered | number}}</h1>
          <p>Recovered</p>
       </div>
    </section>
@@ -100,17 +100,17 @@
    <section class="world-review" *ngFor="let item of nigeriaIndex">
 
       <div class="world world-case">
-         <h1>{{item.cases}}</h1>
+         <h1>{{item.cases | number}}</h1>
          <p>Total Cases</p>
       </div>
 
       <div class="world world-death">
-         <h1>{{item.deaths}}</h1>
+         <h1>{{item.deaths | number}}</h1>
          <p>total Deaths</p>
       </div>
 
       <div class="world world-recovery">
-         <h1>{{item.recovered}}</h1>
+         <h1>{{item.recovered | number}}</h1>
          <p>Recovered</p>
       </div>
    </section>

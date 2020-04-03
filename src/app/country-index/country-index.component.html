@@ -1,1 +1,23 @@
-<p>country-index works!</p>
+<div class="body">
+   
+   <!-- <form (ngSubmit)="onSubmit()" #form="ngForm">
+      <input type="text" name="search" id="">
+   </form> -->
+
+   <div *ngFor="let item of countriesData">
+      <h1>{{item.country}}</h1>
+   
+      <p>
+        TOtal Cases: {{item.cases | number}}
+      </p>
+   
+      <p>
+         Total Deaths:{{item.deaths | number}}
+      </p>
+      <p>
+        Total Recovered: {{item.recovered | number}}
+      </p>
+   </div>
+</div>
+
+

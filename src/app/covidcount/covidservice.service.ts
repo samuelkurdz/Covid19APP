@@ -15,7 +15,6 @@ export class CovidService {
 
   searchCountryUrl = 'https://coronavirus-19-api.herokuapp.com/countries';
 
-  // let   searchCountryUrl = 'https://coronavirus-19-api.herokuapp.com/countries/Nigeria';
 
   constructor(private http: HttpClient) { }
 
@@ -29,7 +28,6 @@ export class CovidService {
   
   getSpecificCountryData(country): Observable<CountryIndex> {
     return this.http.get<CountryIndex>(`${this.searchCountryUrl}/${country}`);
-    // return this.http.get<any>(`https://coronavirus-19-api.herokuapp.com/countries/${country}`);
   }
 
 
