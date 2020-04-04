@@ -7,6 +7,7 @@ import { CountryIndex } from './covidInterface';
 @Injectable({
   providedIn: 'root'
 })
+
 export class CovidService {
 
   allUrl = 'https://coronavirus-19-api.herokuapp.com/all';
@@ -25,10 +26,8 @@ export class CovidService {
   getCountryData(): Observable<any> {
     return this.http.get<any>(this.countriesUrl);
   }
-  
+
   getSpecificCountryData(country): Observable<CountryIndex> {
     return this.http.get<CountryIndex>(`${this.searchCountryUrl}/${country}`);
   }
-
-
 }

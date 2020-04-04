@@ -1,11 +1,10 @@
 <div class="body">
    <h1>CoronaVirus by Country</h1>
-   <!-- <form (ngSubmit)="onSubmit()" #form="ngForm"> -->
-   <form>
-      <input type="text" name="search" id="" placeholder="Search Country">
-   </form>
 
-   <div class="countryInfo" *ngFor="let item of countriesData">
+   <input type="text" placeholder="Search Country" [(ngModel)]="term"/>
+   
+
+   <div class="countryInfo" *ngFor="let item of countriesData | filter:term">
       <h2>{{item.country}}</h2>
    
       <p>
