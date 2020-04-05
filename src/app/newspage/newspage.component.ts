@@ -20,7 +20,7 @@ export class NewspageComponent implements OnInit {
   getNewsContent(): void {
     this.newsService.getNews().subscribe((data) => {
       this.NewsArticle = [...data.articles]
-      console.log(this.NewsArticle);
+      // console.log(this.NewsArticle);
     })
   }
 
