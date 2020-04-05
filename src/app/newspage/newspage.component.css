@@ -1,0 +1,44 @@
+* {
+   font-size: 16px;
+}
+
+.body {
+   padding: 1rem;
+   text-align: center;
+   color: black;
+}
+
+img {
+   height: 200px;
+   width: 100%;
+}
+
+h1 {
+   font-size: 30px;
+   margin-bottom: 1rem;
+}
+
+article{
+   border-bottom: 2px solid black;
+   margin-bottom: 1rem;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+h2 {
+   text-align: left;
+}
+
+
+@media all and (min-width: 800px) {
+
+   .newsSection {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      column-gap: 12.5px;
+   }
+}

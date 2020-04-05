@@ -1,1 +1,13 @@
-<p>newspage works!</p>
+<div class="body">
+
+   <h1>Latest Corona News Headlines</h1>
+   <div class="newsSection">
+      <article *ngFor="let item of NewsArticle">
+         <img [src]="item.urlToImage" alt="News Headline Image">
+         <h2>
+            <a [href]="item.url" target="_blank" rel="noopener noreferrer">{{item.title}}</a>
+         </h2>
+      </article>
+   </div>
+
+</div>

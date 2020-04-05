@@ -10,14 +10,17 @@ export class NewspageComponent implements OnInit {
 
   constructor(private newsService: NewsService) { }
 
+  NewsArticle = [];
+
   ngOnInit(): void {
     this.getNewsContent();
+    alert('Click on News Headline to Read Full News');
   }
 
   getNewsContent(): void {
     this.newsService.getNews().subscribe((data) => {
-      console.log(data.articles);
-      
+      this.NewsArticle = [...data.articles]
+      console.log(this.NewsArticle);
     })
   }
 
